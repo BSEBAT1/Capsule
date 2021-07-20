@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F51F073726A24B7C00E9D99A /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F073626A24B7C00E9D99A /* FilterViewController.swift */; };
+		F51F073B26A2522D00E9D99A /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F073A26A2522D00E9D99A /* FeedViewModel.swift */; };
+		F51F077926A2892600E9D99A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F077826A2892600E9D99A /* FeedViewController.swift */; };
+		F51F077D26A29D6200E9D99A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F077C26A29D6200E9D99A /* APIService.swift */; };
+		F51F077F26A2A6AD00E9D99A /* ArticlesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F077E26A2A6AD00E9D99A /* ArticlesData.swift */; };
+		F5C544AC26A23ED8009A7737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C544AB26A23ED8009A7737 /* AppDelegate.swift */; };
+		F5C544AE26A23ED8009A7737 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C544AD26A23ED8009A7737 /* SceneDelegate.swift */; };
+		F5C544B526A23EDA009A7737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C544B426A23EDA009A7737 /* Assets.xcassets */; };
+		F5C544C326A23EDA009A7737 /* BerkayDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C544C226A23EDA009A7737 /* BerkayDemoTests.swift */; };
+		F5C544CE26A23EDA009A7737 /* BerkayDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C544CD26A23EDA009A7737 /* BerkayDemoUITests.swift */; };
+		F5C7FCBB26A324E400DEC617 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7FCBA26A324E400DEC617 /* Article.swift */; };
+		F5C7FCBD26A3CF4100DEC617 /* ListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7FCBC26A3CF4100DEC617 /* ListingCell.swift */; };
+		F5C8382626A490610034F15B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8382526A490610034F15B /* DetailsViewController.swift */; };
+		F5C8382826A4BE090034F15B /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8382726A4BE090034F15B /* ImageLoader.swift */; };
+		F5C8382A26A4E2920034F15B /* ProjectLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8382926A4E2920034F15B /* ProjectLabel.swift */; };
+		F5C8382C26A4E84D0034F15B /* ProjectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8382B26A4E84D0034F15B /* ProjectButton.swift */; };
+		F5C8382E26A4F9CE0034F15B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8382D26A4F9CE0034F15B /* GradientView.swift */; };
+		F5C8383026A536B70034F15B /* ProjectTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8382F26A536B70034F15B /* ProjectTextField.swift */; };
+		F5C8383226A547480034F15B /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8383126A547480034F15B /* FilterViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5C544BF26A23EDA009A7737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5C544A026A23ED8009A7737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5C544A726A23ED8009A7737;
+			remoteInfo = BerkayDemo;
+		};
+		F5C544CA26A23EDA009A7737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5C544A026A23ED8009A7737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5C544A726A23ED8009A7737;
+			remoteInfo = BerkayDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F51F073626A24B7C00E9D99A /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		F51F073A26A2522D00E9D99A /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		F51F077826A2892600E9D99A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		F51F077C26A29D6200E9D99A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F51F077E26A2A6AD00E9D99A /* ArticlesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesData.swift; sourceTree = "<group>"; };
+		F5C544A826A23ED8009A7737 /* BerkayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BerkayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C544AB26A23ED8009A7737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5C544AD26A23ED8009A7737 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5C544B426A23EDA009A7737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5C544B926A23EDA009A7737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C544BE26A23EDA009A7737 /* BerkayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BerkayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C544C226A23EDA009A7737 /* BerkayDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerkayDemoTests.swift; sourceTree = "<group>"; };
+		F5C544C426A23EDA009A7737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C544C926A23EDA009A7737 /* BerkayDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BerkayDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C544CD26A23EDA009A7737 /* BerkayDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerkayDemoUITests.swift; sourceTree = "<group>"; };
+		F5C544CF26A23EDA009A7737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C7FCBA26A324E400DEC617 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		F5C7FCBC26A3CF4100DEC617 /* ListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingCell.swift; sourceTree = "<group>"; };
+		F5C8382526A490610034F15B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F5C8382726A4BE090034F15B /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		F5C8382926A4E2920034F15B /* ProjectLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectLabel.swift; sourceTree = "<group>"; };
+		F5C8382B26A4E84D0034F15B /* ProjectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectButton.swift; sourceTree = "<group>"; };
+		F5C8382D26A4F9CE0034F15B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		F5C8382F26A536B70034F15B /* ProjectTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTextField.swift; sourceTree = "<group>"; };
+		F5C8383126A547480034F15B /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5C544A526A23ED8009A7737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C544BB26A23EDA009A7737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C544C626A23EDA009A7737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5C5449F26A23ED8009A7737 = {
+			isa = PBXGroup;
+			children = (
+				F5C544AA26A23ED8009A7737 /* BerkayDemo */,
+				F5C544C126A23EDA009A7737 /* BerkayDemoTests */,
+				F5C544CC26A23EDA009A7737 /* BerkayDemoUITests */,
+				F5C544A926A23ED8009A7737 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5C544A926A23ED8009A7737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5C544A826A23ED8009A7737 /* BerkayDemo.app */,
+				F5C544BE26A23EDA009A7737 /* BerkayDemoTests.xctest */,
+				F5C544C926A23EDA009A7737 /* BerkayDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5C544AA26A23ED8009A7737 /* BerkayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F5C8382926A4E2920034F15B /* ProjectLabel.swift */,
+				F5C8382726A4BE090034F15B /* ImageLoader.swift */,
+				F5C544AB26A23ED8009A7737 /* AppDelegate.swift */,
+				F5C544AD26A23ED8009A7737 /* SceneDelegate.swift */,
+				F51F077826A2892600E9D99A /* FeedViewController.swift */,
+				F5C8382526A490610034F15B /* DetailsViewController.swift */,
+				F5C8382D26A4F9CE0034F15B /* GradientView.swift */,
+				F5C8382B26A4E84D0034F15B /* ProjectButton.swift */,
+				F51F077C26A29D6200E9D99A /* APIService.swift */,
+				F5C7FCBA26A324E400DEC617 /* Article.swift */,
+				F5C7FCBC26A3CF4100DEC617 /* ListingCell.swift */,
+				F51F077E26A2A6AD00E9D99A /* ArticlesData.swift */,
+				F51F073A26A2522D00E9D99A /* FeedViewModel.swift */,
+				F51F073626A24B7C00E9D99A /* FilterViewController.swift */,
+				F5C8383126A547480034F15B /* FilterViewModel.swift */,
+				F5C8382F26A536B70034F15B /* ProjectTextField.swift */,
+				F5C544B426A23EDA009A7737 /* Assets.xcassets */,
+				F5C544B926A23EDA009A7737 /* Info.plist */,
+			);
+			path = BerkayDemo;
+			sourceTree = "<group>";
+		};
+		F5C544C126A23EDA009A7737 /* BerkayDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5C544C226A23EDA009A7737 /* BerkayDemoTests.swift */,
+				F5C544C426A23EDA009A7737 /* Info.plist */,
+			);
+			path = BerkayDemoTests;
+			sourceTree = "<group>";
+		};
+		F5C544CC26A23EDA009A7737 /* BerkayDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5C544CD26A23EDA009A7737 /* BerkayDemoUITests.swift */,
+				F5C544CF26A23EDA009A7737 /* Info.plist */,
+			);
+			path = BerkayDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5C544A726A23ED8009A7737 /* BerkayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5C544D226A23EDA009A7737 /* Build configuration list for PBXNativeTarget "BerkayDemo" */;
+			buildPhases = (
+				F5C544A426A23ED8009A7737 /* Sources */,
+				F5C544A526A23ED8009A7737 /* Frameworks */,
+				F5C544A626A23ED8009A7737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BerkayDemo;
+			productName = BerkayDemo;
+			productReference = F5C544A826A23ED8009A7737 /* BerkayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5C544BD26A23EDA009A7737 /* BerkayDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5C544D526A23EDA009A7737 /* Build configuration list for PBXNativeTarget "BerkayDemoTests" */;
+			buildPhases = (
+				F5C544BA26A23EDA009A7737 /* Sources */,
+				F5C544BB26A23EDA009A7737 /* Frameworks */,
+				F5C544BC26A23EDA009A7737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5C544C026A23EDA009A7737 /* PBXTargetDependency */,
+			);
+			name = BerkayDemoTests;
+			productName = BerkayDemoTests;
+			productReference = F5C544BE26A23EDA009A7737 /* BerkayDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5C544C826A23EDA009A7737 /* BerkayDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5C544D826A23EDA009A7737 /* Build configuration list for PBXNativeTarget "BerkayDemoUITests" */;
+			buildPhases = (
+				F5C544C526A23EDA009A7737 /* Sources */,
+				F5C544C626A23EDA009A7737 /* Frameworks */,
+				F5C544C726A23EDA009A7737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5C544CB26A23EDA009A7737 /* PBXTargetDependency */,
+			);
+			name = BerkayDemoUITests;
+			productName = BerkayDemoUITests;
+			productReference = F5C544C926A23EDA009A7737 /* BerkayDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5C544A026A23ED8009A7737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F5C544A726A23ED8009A7737 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					F5C544BD26A23EDA009A7737 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F5C544A726A23ED8009A7737;
+					};
+					F5C544C826A23EDA009A7737 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F5C544A726A23ED8009A7737;
+					};
+				};
+			};
+			buildConfigurationList = F5C544A326A23ED8009A7737 /* Build configuration list for PBXProject "BerkayDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5C5449F26A23ED8009A7737;
+			productRefGroup = F5C544A926A23ED8009A7737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5C544A726A23ED8009A7737 /* BerkayDemo */,
+				F5C544BD26A23EDA009A7737 /* BerkayDemoTests */,
+				F5C544C826A23EDA009A7737 /* BerkayDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5C544A626A23ED8009A7737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C544B526A23EDA009A7737 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C544BC26A23EDA009A7737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C544C726A23EDA009A7737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5C544A426A23ED8009A7737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C8383226A547480034F15B /* FilterViewModel.swift in Sources */,
+				F5C8383026A536B70034F15B /* ProjectTextField.swift in Sources */,
+				F51F073B26A2522D00E9D99A /* FeedViewModel.swift in Sources */,
+				F5C544AC26A23ED8009A7737 /* AppDelegate.swift in Sources */,
+				F5C7FCBB26A324E400DEC617 /* Article.swift in Sources */,
+				F51F073726A24B7C00E9D99A /* FilterViewController.swift in Sources */,
+				F5C8382E26A4F9CE0034F15B /* GradientView.swift in Sources */,
+				F5C544AE26A23ED8009A7737 /* SceneDelegate.swift in Sources */,
+				F5C8382C26A4E84D0034F15B /* ProjectButton.swift in Sources */,
+				F51F077D26A29D6200E9D99A /* APIService.swift in Sources */,
+				F5C8382A26A4E2920034F15B /* ProjectLabel.swift in Sources */,
+				F51F077F26A2A6AD00E9D99A /* ArticlesData.swift in Sources */,
+				F5C7FCBD26A3CF4100DEC617 /* ListingCell.swift in Sources */,
+				F51F077926A2892600E9D99A /* FeedViewController.swift in Sources */,
+				F5C8382626A490610034F15B /* DetailsViewController.swift in Sources */,
+				F5C8382826A4BE090034F15B /* ImageLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C544BA26A23EDA009A7737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C544C326A23EDA009A7737 /* BerkayDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C544C526A23EDA009A7737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C544CE26A23EDA009A7737 /* BerkayDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5C544C026A23EDA009A7737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5C544A726A23ED8009A7737 /* BerkayDemo */;
+			targetProxy = F5C544BF26A23EDA009A7737 /* PBXContainerItemProxy */;
+		};
+		F5C544CB26A23EDA009A7737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5C544A726A23ED8009A7737 /* BerkayDemo */;
+			targetProxy = F5C544CA26A23EDA009A7737 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F5C544D026A23EDA009A7737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5C544D126A23EDA009A7737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5C544D326A23EDA009A7737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J62C77A3ZV;
+				INFOPLIST_FILE = BerkayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Capsule.Demo.BerkayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5C544D426A23EDA009A7737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J62C77A3ZV;
+				INFOPLIST_FILE = BerkayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Capsule.Demo.BerkayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5C544D626A23EDA009A7737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J62C77A3ZV;
+				INFOPLIST_FILE = BerkayDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Capsule.Demo.BerkayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BerkayDemo.app/BerkayDemo";
+			};
+			name = Debug;
+		};
+		F5C544D726A23EDA009A7737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J62C77A3ZV;
+				INFOPLIST_FILE = BerkayDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Capsule.Demo.BerkayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BerkayDemo.app/BerkayDemo";
+			};
+			name = Release;
+		};
+		F5C544D926A23EDA009A7737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J62C77A3ZV;
+				INFOPLIST_FILE = BerkayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Capsule.Demo.BerkayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BerkayDemo;
+			};
+			name = Debug;
+		};
+		F5C544DA26A23EDA009A7737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J62C77A3ZV;
+				INFOPLIST_FILE = BerkayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Capsule.Demo.BerkayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BerkayDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5C544A326A23ED8009A7737 /* Build configuration list for PBXProject "BerkayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C544D026A23EDA009A7737 /* Debug */,
+				F5C544D126A23EDA009A7737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5C544D226A23EDA009A7737 /* Build configuration list for PBXNativeTarget "BerkayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C544D326A23EDA009A7737 /* Debug */,
+				F5C544D426A23EDA009A7737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5C544D526A23EDA009A7737 /* Build configuration list for PBXNativeTarget "BerkayDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C544D626A23EDA009A7737 /* Debug */,
+				F5C544D726A23EDA009A7737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5C544D826A23EDA009A7737 /* Build configuration list for PBXNativeTarget "BerkayDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C544D926A23EDA009A7737 /* Debug */,
+				F5C544DA26A23EDA009A7737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5C544A026A23ED8009A7737 /* Project object */;
+}
