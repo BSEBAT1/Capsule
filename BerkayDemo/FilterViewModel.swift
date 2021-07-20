@@ -12,16 +12,16 @@ class FilterViewModel {
    private let searchApi:ApiServiceProtocol
    private let onFilterApplied: ([Article]) -> ()
    
-    init(api:ApiServiceProtocol, onFilterApplied: @escaping ([Article]) -> (), onFailed: @escaping (String) -> ()) {
+    init(api:ApiServiceProtocol, onFilterApplied: @escaping ([Article]) -> (),onFailed: @escaping (String) -> ()) {
         searchApi = api
         self.onFilterApplied = onFilterApplied
     }
     
-    func performSearchFilter(_ params:[String:String]) {
+    func performSearchFilter(_ params:[String: String]) {
         searchApi.performSearch(withParams: params) { articles in
             print("success: \(articles)")
             self.onFilterApplied(articles)
-        } onFailure: { error in
+        } onFailure:{ error in
             print("error: \(error)")
         }
     }

@@ -81,7 +81,7 @@ struct Keyword: Codable {
 }
 
 enum Major: String, Codable {
-    case n = "N"
+    case nnn = "N"
 }
 
 enum Name: String, Codable {

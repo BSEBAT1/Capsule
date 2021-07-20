@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "349601C0-960A-4738-A318-A11197F22B01"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BerkayDemo/ImageLoader.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "download(from:contentMode:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "9444FA8D-BFB2-4F59-929B-37A727DD3020"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -30,42 +14,10 @@
             filePath = "BerkayDemo/APIService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "performSearch(withParams:onSuccess:onFailure:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9444FA8D-BFB2-4F59-929B-37A727DD3020 - 8d6bc5ebc548bbd0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (BerkayDemo.Doc) -&gt; BerkayDemo.Article in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BerkayDemo.ApiService.performSearch(withParams: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, onSuccess: (Swift.Array&lt;BerkayDemo.Article&gt;) -&gt; (), onFailure: (Swift.String) -&gt; ()) -&gt; ()"
-                  moduleName = "BerkayDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bsebat/Desktop/BerkayDemo/BerkayDemo/APIService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  uuid = "9444FA8D-BFB2-4F59-929B-37A727DD3020 - aa5ce81fe3b89370"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (BerkayDemo.Multimedia) -&gt; Swift.String in closure #1 (BerkayDemo.Doc) -&gt; BerkayDemo.Article in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BerkayDemo.ApiService.performSearch(withParams: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, onSuccess: (Swift.Array&lt;BerkayDemo.Article&gt;) -&gt; (), onFailure: (Swift.String) -&gt; ()) -&gt; ()"
-                  moduleName = "BerkayDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bsebat/Desktop/BerkayDemo/BerkayDemo/APIService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "46">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

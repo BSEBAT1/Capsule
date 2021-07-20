@@ -6,15 +6,13 @@ class ListingCell: UITableViewCell {
   private let cellImage = UIImageView()
   private let titleLabel = PLabel()
     
-    func configure(data:Article) {
+    func configure(data: Article) {
         configureUI()
-        
         titleLabel.text = data.headline
-        cellImage.download(from:data.imageUrl)
+        cellImage.download(from: data.imageUrl)
     }
     
     private func configureUI() {
-        
         cellImage.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(cellImage)

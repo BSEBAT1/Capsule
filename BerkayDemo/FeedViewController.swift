@@ -24,7 +24,6 @@ class FeedViewController:UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         feedData.didUpdate = { [weak self] error in
             if let errorMessage = error {
                 self?.displayError(errorMessage)
@@ -37,8 +36,6 @@ class FeedViewController:UITableViewController {
         configureViews()
         feedData.performSearch()
     }
-    
-    
     
   private func configureViews() {
         let titleLabel = PLabel()
@@ -68,8 +65,8 @@ class FeedViewController:UITableViewController {
 extension FeedViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ListingCell.self)) as! ListingCell
-        cell.configure(data:feedData.articleAt(at: indexPath))
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ListingCell.self)) as? ListingCell else { return UITableViewCell()}
+        cell.configure(data: feedData.articleAt(at: indexPath))
         return cell
     }
     

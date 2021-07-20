@@ -8,7 +8,6 @@
 import XCTest
 @testable import BerkayDemo
 
-
 // Move to FakeApiService.swift
 class FakeApiService: ApiServiceProtocol {
     
@@ -26,15 +25,10 @@ class BerkayDemoTests: XCTestCase {
     var fakeApiService: FakeApiService!
     
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
         fakeApiService = FakeApiService()
         feedViewModel = FeedViewModel(searchAPI: fakeApiService)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
+    
     func testCorrectNumberOfArticles() throws {
         fakeApiService.fakedResults = [
             Article(abstract: "abstract", leadParagraph: "leadParagraph", imageUrl: "imageUrl", headline: "headline", author: "author", articleUrl: "articleUrl")

@@ -8,13 +8,11 @@
 import Foundation
 
 struct Article {
-   
-    var abstract:String?
-    var leadParagraph:String?
-    var imageUrl:String?
-    var headline:String?
-    var author:String?
-    var articleUrl:String?
     
-    
+    var abstract: String?
+    var leadParagraph: String?
+    var imageUrl: String?
+    var headline: String?
+    var author: String?
+    var articleUrl: String?
 }

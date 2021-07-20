@@ -35,7 +35,6 @@ class FilterViewController: GradientViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -78,6 +77,4 @@ extension FilterViewController: UITextFieldDelegate {
            return true
        }
 }
-
-
 
