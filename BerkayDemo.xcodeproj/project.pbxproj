@@ -100,18 +100,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E2B38C24F3C2E8A87D360D45 /* Pods */ = {
+		F5A8175826A67C7300477AAA /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				F5C8383126A547480034F15B /* FilterViewModel.swift */,
+				F51F073A26A2522D00E9D99A /* FeedViewModel.swift */,
 			);
-			path = Pods;
+			path = "View Models";
 			sourceTree = "<group>";
 		};
-		F5A8175226A65FDF00477AAA /* Feed */ = {
+		F5A8175926A67F1900477AAA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F51F077C26A29D6200E9D99A /* APIService.swift */,
 			);
-			path = Feed;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F5A8175A26A67F4900477AAA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F51F077826A2892600E9D99A /* FeedViewController.swift */,
+				F51F073626A24B7C00E9D99A /* FilterViewController.swift */,
+				F5C8382526A490610034F15B /* DetailsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F5A8175B26A67F8000477AAA /* Re-Usable Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5C8382F26A536B70034F15B /* ProjectTextField.swift */,
+				F5C8382926A4E2920034F15B /* ProjectLabel.swift */,
+				F5C7FCBC26A3CF4100DEC617 /* ListingCell.swift */,
+				F5C8382D26A4F9CE0034F15B /* GradientView.swift */,
+				F5C8382B26A4E84D0034F15B /* ProjectButton.swift */,
+			);
+			path = "Re-Usable Views";
+			sourceTree = "<group>";
+		};
+		F5A8175C26A67FC500477AAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7FCBA26A324E400DEC617 /* Article.swift */,
+				F51F077E26A2A6AD00E9D99A /* ArticlesData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5A8175D26A67FE300477AAA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F5C8382726A4BE090034F15B /* ImageLoader.swift */,
+				F5A8175626A6764000477AAA /* Collection+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F5C5449F26A23ED8009A7737 = {
@@ -121,7 +164,6 @@
 				F5C544C126A23EDA009A7737 /* BerkayDemoTests */,
 				F5C544CC26A23EDA009A7737 /* BerkayDemoUITests */,
 				F5C544A926A23ED8009A7737 /* Products */,
-				E2B38C24F3C2E8A87D360D45 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,24 +180,14 @@
 		F5C544AA26A23ED8009A7737 /* BerkayDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F5A8175226A65FDF00477AAA /* Feed */,
-				F5C8382926A4E2920034F15B /* ProjectLabel.swift */,
-				F5C8382726A4BE090034F15B /* ImageLoader.swift */,
+				F5A8175D26A67FE300477AAA /* Helpers */,
+				F5A8175C26A67FC500477AAA /* Models */,
+				F5A8175B26A67F8000477AAA /* Re-Usable Views */,
+				F5A8175A26A67F4900477AAA /* View Controllers */,
+				F5A8175926A67F1900477AAA /* Services */,
+				F5A8175826A67C7300477AAA /* View Models */,
 				F5C544AB26A23ED8009A7737 /* AppDelegate.swift */,
 				F5C544AD26A23ED8009A7737 /* SceneDelegate.swift */,
-				F51F077826A2892600E9D99A /* FeedViewController.swift */,
-				F5C8382526A490610034F15B /* DetailsViewController.swift */,
-				F5C8382D26A4F9CE0034F15B /* GradientView.swift */,
-				F5C8382B26A4E84D0034F15B /* ProjectButton.swift */,
-				F51F077C26A29D6200E9D99A /* APIService.swift */,
-				F5A8175626A6764000477AAA /* Collection+Extensions.swift */,
-				F5C7FCBA26A324E400DEC617 /* Article.swift */,
-				F5C7FCBC26A3CF4100DEC617 /* ListingCell.swift */,
-				F51F077E26A2A6AD00E9D99A /* ArticlesData.swift */,
-				F51F073A26A2522D00E9D99A /* FeedViewModel.swift */,
-				F51F073626A24B7C00E9D99A /* FilterViewController.swift */,
-				F5C8383126A547480034F15B /* FilterViewModel.swift */,
-				F5C8382F26A536B70034F15B /* ProjectTextField.swift */,
 				F5C544B426A23EDA009A7737 /* Assets.xcassets */,
 				F5C544B926A23EDA009A7737 /* Info.plist */,
 			);

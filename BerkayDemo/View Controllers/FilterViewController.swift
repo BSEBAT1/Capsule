@@ -54,9 +54,9 @@ class FilterViewController: GradientViewController {
             filterView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: +10),
             filterView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             filterView.heightAnchor.constraint(equalToConstant: 50),
-            applyButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            applyButton.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            applyButton.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            applyButton.topAnchor.constraint(equalTo:filterView.bottomAnchor,constant: 50),
+            applyButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: +10),
+            applyButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             applyButton.heightAnchor.constraint(equalToConstant: 50)
         ])
         
