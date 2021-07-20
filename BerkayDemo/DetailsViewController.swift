@@ -23,13 +23,13 @@ class DetailsViewController: GradientViewController {
             configureViews()
     }
     
-    init(articleData:Article) {
+    init(articleData: Article) {
         super.init(nibName: nil, bundle: nil)
         headlineLabel.text = articleData.headline
         bodyText.text = articleData.abstract
         author.text = articleData.author
         detailIcon.download(from: articleData.imageUrl, contentMode: .scaleAspectFit)
-        button.articleLink = articleData.articleUrl
+        button.articleLink = articleData.articleUrl ?? "http://www.nytimes.com"
         button.addTarget(self, action: #selector(openArticle), for: .touchUpInside)
     }
     

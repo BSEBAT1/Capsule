@@ -24,10 +24,10 @@ class FilterViewController: GradientViewController {
         return textField
     }()
     
-    private let apiService:ApiService
+    private let viewModel: FilterViewModel
     
-    init(searchApi:ApiService) {
-        self.apiService = searchApi
+    init(viewModel: FilterViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -65,7 +65,7 @@ class FilterViewController: GradientViewController {
     
     @objc func applyButtonPressed() {
         if let query = filterView.text {
-            FilterViewModel.init(api: apiService).performSearchFilter(["q":query])
+            viewModel.performSearchFilter(["q":query])
         }
         self.navigationController?.popViewController(animated: true)
     }

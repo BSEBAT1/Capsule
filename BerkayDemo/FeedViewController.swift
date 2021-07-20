@@ -11,11 +11,21 @@ import UIKit
 class FeedViewController:UITableViewController {
     
    private let searchApi = ApiService.init()
-   private let feedData = FeedViewModel()
+   private let feedData:FeedViewModel
+    
+    init() {
+        feedData = FeedViewModel.init(searchAPI: searchApi)
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        feedData.didUpdate = { [weak self] error  in
+        
+        feedData.didUpdate = { [weak self] error in
             if let errorMessage = error {
                 self?.displayError(errorMessage)
             } else {
@@ -27,6 +37,8 @@ class FeedViewController:UITableViewController {
         configureViews()
         feedData.performSearch()
     }
+    
+    
     
   private func configureViews() {
         let titleLabel = PLabel()
@@ -42,7 +54,8 @@ class FeedViewController:UITableViewController {
     }
     
     @objc func filter() {
-        self.navigationController?.pushViewController(FilterViewController.init(searchApi: searchApi), animated: true)
+        let filterViewController = FilterViewController(viewModel: feedData.filterViewModel)
+        self.navigationController?.pushViewController(filterViewController, animated: true)
     }
     
    private func displayError(_ message:String) {

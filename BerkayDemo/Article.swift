@@ -9,12 +9,12 @@ import Foundation
 
 struct Article {
    
-    var abstract = ""
-    var leadParagraph = ""
-    var imageUrl = ""
-    var headline = ""
-    var author = ""
-    var articleUrl = "https://www.nytimes.com"
+    var abstract:String?
+    var leadParagraph:String?
+    var imageUrl:String?
+    var headline:String?
+    var author:String?
+    var articleUrl:String?
     
     
 }

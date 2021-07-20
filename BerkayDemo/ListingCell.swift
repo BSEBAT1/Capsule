@@ -36,4 +36,4 @@ class ListingCell: UITableViewCell {
         textLabel?.text = ""
         imageView?.image = nil
     }
-    }
+}

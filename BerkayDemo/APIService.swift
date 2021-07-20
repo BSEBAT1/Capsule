@@ -7,11 +7,38 @@
 
 import Foundation
 
-class ApiService {
-    
-  private var values = [Article]()
-  private var searchQuery = "yoga"
+// Move it to Collection+Extensions.swift
+extension Collection {
+
+    /// Returns the element at the specified index if it is within bounds, otherwise nil.
+    subscript (safe index: Index) -> Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
+}
+
+protocol ApiServiceProtocol {
+    func performSearch(
+        withParams:[String:String],
+        onSuccess success: @escaping (_ articleList:[Article]) -> Void,
+        onFailure failure:@escaping (_ error:String) -> Void
+    )
+}
+
+
+class ApiService: ApiServiceProtocol {
+    private var searchQuery = "yoga"
   private var page = "0"
+    
+//    func fetchAllArticles() {
+//        let paramaters = ["page_count":String(pageCount)]
+//        api.performSearch(withParams:paramaters, onSuccess:{ article in
+//            self.articles += article
+//            self.didUpdate(nil)
+//            self.pageCount = self.pageCount+1
+//        }, onFailure: { error in
+//            self.didUpdate(error)
+//        })
+//    }
     
     func performSearch(withParams:[String:String], onSuccess success: @escaping (_ articleList:[Article]) -> Void, onFailure failure:@escaping (_ error:String) -> Void ) {
         if let query = withParams["q"] {
@@ -44,35 +71,48 @@ class ApiService {
             }
             do {
                 let articlesList = try JSONDecoder().decode(News.self, from: data!)
+                
                 if let documentsList = articlesList.response?.docs {
-                    for item in documentsList {
-                        var article = Article()
-                        if let abstract = item.abstract {
-                            article.abstract = abstract
-                        }
-                        if let webUrl = item.webURL {
-                            article.articleUrl = webUrl
-                        }
-                        if let lead = item.leadParagraph {
-                            article.leadParagraph = lead
-                        }
-                        if let headline = item.headline?.main {
-                            article.headline = headline
-                        }
-                        if let author = item.byline?.original {
-                            article.author = author
-                        }
-                        if let multimedia = item.multimedia, multimedia.count > 0 {
-                            if let url = multimedia[0].url {
-                                article.imageUrl = "http://www.nytimes.com/"+url
+                    let articles = documentsList
+                        .map { (doc: Doc) -> Article in
+                            var imageURL:String? = nil
+                            if let url = doc.multimedia, url.count > 0, let imgString = url[0].url {
+                                imageURL = "http://www.nytimes.com/"+imgString
                             }
+                            return Article(
+                                abstract: doc.abstract,
+                                leadParagraph: doc.leadParagraph,
+                                imageUrl: imageURL,
+                                headline: doc.headline?.main,
+                                author: doc.byline?.original,
+                                articleUrl: doc.webURL)
                         }
-                        self.values.append(article)
-                    }
-                    if self.page != "0" {
-                        self.values.removeLast()
-                    }
-                    success(self.values)
+//                    for item in documentsList {
+//                        var article = Article()
+//                        if let abstract = item.abstract {
+//                            article.abstract = abstract
+//                        }
+//                        if let webUrl = item.webURL {
+//                            article.articleUrl = webUrl
+//                        }
+//                        if let lead = item.leadParagraph {
+//                            article.leadParagraph = lead
+//                        }
+//                        if let headline = item.headline?.main {
+//                            article.headline = headline
+//                        }
+//                        if let author = item.byline?.original {
+//                            article.author = author
+//                        }
+//                        if let multimedia = item.multimedia, multimedia.count > 0 {
+//                            if let url = multimedia[0].url {
+//                                article.imageUrl = "http://www.nytimes.com/"+url
+//                            }
+//                        }
+//                        articles.append(article)
+//                    }
+
+                    success(articles)
                 } else {
                     failure("No Values Returned")
                 }

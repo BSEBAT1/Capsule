@@ -9,21 +9,22 @@ import Foundation
 
 class FilterViewModel {
     
-   private let searchApi:ApiService
+   private let searchApi:ApiServiceProtocol
+   private let onFilterApplied: ([Article]) -> ()
    
-    init(api:ApiService) {
+    init(api:ApiServiceProtocol, onFilterApplied: @escaping ([Article]) -> (), onFailed: @escaping (String) -> ()) {
         searchApi = api
+        self.onFilterApplied = onFilterApplied
     }
     
     func performSearchFilter(_ params:[String:String]) {
-        searchApi.performSearch(withParams: params) { <#[Article]#> in
-            <#code#>
-        } onFailure: { <#String#> in
-            <#code#>
+        searchApi.performSearch(withParams: params) { articles in
+            print("success: \(articles)")
+            self.onFilterApplied(articles)
+        } onFailure: { error in
+            print("error: \(error)")
         }
-
     }
-    
 }
 
 

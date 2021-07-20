@@ -12,10 +12,22 @@ class FeedViewModel {
    private var articles = [Article]()
    var didUpdate: ((String?) -> ()) = {_ in }
    private var pageCount = 0
+   private let api:ApiServiceProtocol
+   private(set) var filterViewModel: FilterViewModel!
+    
+    init(searchAPI:ApiServiceProtocol) {
+        api = searchAPI
+        filterViewModel = FilterViewModel(api: searchAPI, onFilterApplied: { [weak self] articles in
+            self?.articles = articles
+            self?.didUpdate(nil)
+        }, onFailed:{ [weak self] errorDesc in
+            self?.didUpdate(errorDesc)
+        })
+    }
     
    func performSearch() {
         let paramaters = ["page_count":String(pageCount)]
-        ApiService.init().performSearch(withParams:paramaters, onSuccess:{ article in
+        api.performSearch(withParams:paramaters, onSuccess:{ article in
             self.articles += article
             self.didUpdate(nil)
             self.pageCount = self.pageCount+1

@@ -9,8 +9,15 @@ import Foundation
 import UIKit
 
 extension UIImageView {
-    func download(from url: String, contentMode mode: ContentMode = .scaleAspectFit) {
-        guard let url = URL.init(string: url) else {return}
+    func download(from url: String?, contentMode mode: ContentMode = .scaleAspectFit) {
+        guard let string = url else {
+            DispatchQueue.main.async() { [weak self] in
+                self?.image = UIImage.init(named: "warning")
+            }
+            return
+        }
+        print(string)
+        guard let url = URL.init(string: string) else {return}
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
